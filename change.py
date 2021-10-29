@@ -4,6 +4,7 @@ import openpyxl
 wb = openpyxl.load_workbook("des.xlsm")
 ws = wb['Sheet1']
 
+# this function changes the rows in a xlsx file (for first the name)
 def change_cell(*args, **kwargs):
     row_count=1
     for row in ws.iter_rows(min_row=2, max_col=1):
